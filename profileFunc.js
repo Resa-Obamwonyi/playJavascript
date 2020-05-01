@@ -64,3 +64,17 @@ if(contacts[i]["firstName"] == name)
 }
 
 lookUpProfile("Akira", "likes");
+
+
+// or another method is: 
+
+//Write your function in between these comments
+function lookUpProfile(name, prop){
+    for(var i in contacts){
+      if(contacts[i].firstName === name) {
+        return contacts[i][prop] || "No such property";
+      }
+    }
+   return "No such contact";
+}
+//Write your function in between these comments
